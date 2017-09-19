@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('ProximaNova-Bold.eot');
+    src: local('☺'), url('ProximaNova-Bold.woff') format('woff'), url('ProximaNova-Bold.ttf') format('truetype'), url('ProximaNova-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('Proxima Nova Light.eot');
+    src: local('☺'), url('Proxima Nova Light.woff') format('woff'), url('Proxima Nova Light.ttf') format('truetype'), url('Proxima Nova Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('Proxima Nova Regular.eot');
+    src: local('☺'), url('Proxima Nova Regular.woff') format('woff'), url('Proxima Nova Regular.ttf') format('truetype'), url('Proxima Nova Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'GothaProLig';
+    src: url('GothaProLig.eot');
+    src: local('☺'), url('GothaProLig.woff') format('woff'),
+    url('GothaProLig.ttf') format('truetype'),
+    url('GothaProLig.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothaProReg';
+    src: url('GothaProReg.eot');
+    src: local('☺'), url('GothaProReg.woff') format('woff'),
+    url('GothaProReg.ttf') format('truetype'),
+    url('GothaProReg.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GothaProBol';
+    src: url('GothaProBol.eot');
+    src: local('☺'), url('GothaProBol.woff') format('woff'), 
+    url('GothaProBol.ttf') format('truetype'), 
+    url('GothaProBol.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

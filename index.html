@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>BitRent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" type="text/css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" type="text/css" rel="stylesheet">
+    <link href="fonts/fonts.css" type="text/css" rel="stylesheet">
+    <link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+</head>
+
+<body>
+<header id="main" class="bg">
+    <div class="container">
+        <div class="fixed">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 head">
+                        <a href="#main" class="logo"><img src="img/logo_white.svg" alt="logo"></a>
+                        <div class="delivery_block">
+                            <div class="delivery_list">
+
+                                <span>   <img src="img/rus.png" alt="language">RU</span>
+                            </div>
+                            <ul class="cities_list">
+                                <li><img src="img/usa.png" alt="usa">EN</li>
+                                <li><img src="img/rus.png" alt="rus">RU</li>
+                            </ul>
+                        </div>
+                        <nav class="nav">
+                            <ul class="menu">
+                                <li class="active"><a href="#ideology">Ideology</a></li>
+                                <li><a href="#product">Product</a></li>
+                                <li><a href="#ico">ICO Conditions</a></li>
+                                <li><a href="#paper">Whitepaper</a></li>
+                                <li><a href="#roadmap">Roadmap</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#contact">Contacts</a></li>
+                            </ul>
+                        </nav>
+
+                        <button type="button" class="subscribe" onclick="showModal()"><img class="hidden-lg"
+                                                                                           src="img/mail.png"
+                                                                                           alt="facebbock"><span
+                                class="hidden-xs hidden-sm hidden-md">Subscribe
+                    for updates</span></button>
+                        <div class="hamburger hidden-md hidden-lg" id="hamburger-6">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-7">
+                <h1>BitRent - a new horizon of real estate market development</h1>
+                <p>BitRent – это платформа на основе технологии Блокчейн и Смарт-контрактов для привлечения инвестиций в
+                    недвижимость.
+                    Наша платформа обеспечит прозрачность операций с недвижимостью</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 header_items">
+                <div class="item">
+                    <img src="img/item1.png" alt="BitRent">
+                    <p>BIM + RFID + blockchain = smart home</p>
+                </div>
+                <div class="item">
+                    <img src="img/item2.png" alt="BitRent">
+                    <p>International real estate </p>
+                </div>
+                <div class="item">
+                    <img src="img/item3.png" alt="BitRent">
+                    <p>Smart contracts for reliable deals</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-offset-1 col-md-5">
+                <p class="timertext">Waitlist will starts in:</p>
+                <div id="timer"></div>
+                <script>
+                    function updateTimer() {
+                        future = Date.parse("November 01, 2017 00:00:00");
+                        now = new Date();
+                        diff = future - now;
+
+                        days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                        hours = Math.floor(diff / (1000 * 60 * 60));
+                        mins = Math.floor(diff / (1000 * 60));
+                        secs = Math.floor(diff / 1000);
+
+                        d = days;
+                        h = hours - days * 24;
+                        m = mins - hours * 60;
+                        s = secs - mins * 60;
+
+                        document.getElementById("timer")
+                            .innerHTML =
+                            '<div>' + d + '<span>Days</span></div>' +
+                            '<div>' + h + '<span>Hours</span></div>' +
+                            '<div>' + m + '<span>Minutes</span></div>' +
+                            '<div>' + s + '<span>Seconds</span></div>';
+                    }
+
+                    setInterval('updateTimer()', 1000);
+
+                </script>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="container">
+    <form class="form">
+        <p>Subscribe for updates</p>
+        <input type="email" placeholder="youremail@example.com" name="mail" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+<section id="ideology">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-10">
+                <p class="h1">Идеология</p>
+                <p class="h2">Рынок недвижимости в современном мире переживает сильные изменения.</p>
+                <p class="h2 hid_3"> Платформа BitRent может предоставить возможность каждому жителю нашей планеты
+                    инвестировать и
+                    владеть любым объектом недвижимости. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="open3 hidden-xs ">show more</button>
+            </div>
+        </div>
+        <div class="row hid_1 set">
+            <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
+                <p class="h3">Инвестиции в недвижимость</p>
+                <p class="item">Привлечение инвестиций на любом этапе строительства</p>
+                <p class="item">Возможность инвестирования небольших сумм</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
+                <p class="h3">Глобальность и прозрачность</p>
+                <p class="item">Инвестиции, защищенные записью в децентрализованном реестре</p>
+                <p class="item">Приобретение недвижимости в любой точке мира</p>
+            </div>
+            <div class="col-xs-12  col-sm-6 col-md-offset-1 col-md-5">
+                <p class="h3">Оцифрованная недвижимость</p>
+                <p class="item">Объекты, оцифрованная информация о которых хранится в Блокчейн</p>
+                <p class="item">Операции с недвижимостью через Смарт-контракты</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
+                <p class="h3">Проектирование и строительство</p>
+                <p class="item">BIM — Информационное Моделирование Зданий</p>
+                <p class="item">RFID – автоматическая идентификация объектов строительства для мониторинга и
+                    контроля</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="open1 hidden-sm hidden-md hidden-lg">show more</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div class=" bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="ideology_h4">Радиочастотная идентификация позволяет производить эффективный контроль качества
+                    каждого элемента, используемого при возведении объекта.
+                    Маркировка пассивными RFID-метками позволяет отслеживать строительство здания на каждом этапе.</p>
+                <p class="ideology_h4"> Логистика, монтаж, сроки, контроль технологического процесса – вся
+                    информация о
+                    возводимом объекте
+                    автоматически отображается в цифровом виде и доступна всем инвесторам.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="product">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="product__title ">Продукт</p>
+                <p class="product__opis">Наша цель – разработать платформу для привлечения инвестиций
+                    в строительную отрасль на основе технологии Блокчейн.</p>
+                <p class="product__opis ">Объект инвестиций – это здания, построенные с
+                    чипированием
+                    всех конструкционных элементов.</p>
+                <p class="product__opis">Это позволит получить полную информацию о недвижимости
+                    в децентрализованной сети.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10">
+                <div class="row">
+                    <div class="col-xs-12 hid_2">
+                        <p class="h3">Платформа BitRent предоставляет возможности для каждого ее участника:</p>
+                    </div>
+                </div>
+                <div class="row hid_2">
+                    <div class="col-xs-12 col-sm-6 col-md-4 product__item">
+                        <p>Полная информация о строящемся объекте</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 product__item">
+                        <p>Мониторинг и контроль качества строительства</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 product__item">
+                        <p>Привлечение инвестиций
+                            на любом этапе</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 product__item">
+                        <p>Контроль сроков
+                            выполнения</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 product__item">
+                        <p>Получение дивидендов от владения недвижимостью</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 product__item">
+                        <p>Продажа и аренда </p>
+                    </div>
+                </div>
+                <div class="row hid_2 product__text">
+                    <div class="col-xs-12">
+                        <p>“Мы верим, что в будущем все реестры недвижимости будут переведены на Блокчейн. Это позволит
+                            каждому человеку в мире легко управлять своими недвижимыми активами.
+                            Давайте вместе создавать мир, в котором будет как можно больше функциональных вещей и
+                            недвижимость станет одной из них.”</p>
+                    </div>
+                </div>
+                <div class="row hid_2 product__video">
+                    <div class="col-xs-12">
+                        <iframe src="https://www.youtube.com/embed/dDEkguB5lAc" frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button class="open2 hidden-sm hidden-md hidden-lg">show more</button>
+                    </div>
+                </div>
+                <div class="row product__text__last">
+                    <div class="col-xs-12 col-sm-6">
+                        <p>Мы выпускаем токены, приобретая которые, каждый участник получает право на долевое участие в
+                            проекте и право на владение объектами недвижимости, которые будут размещены на нашей
+                            платформе.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p>Мы выпускаем токены, приобретая которые, каждый участник получает право на долевое участие в
+                            проекте и право на владение объектами недвижимости, которые будут размещены на нашей
+                            платформе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section id="ico" class="bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="ico__title">PRE-ICO Conditions</p>
+                        <p class="ico__title2">Conditions are following</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 counter">
+                        <div class="counter-value" data-count="1000000000">0</div>
+                        <p>Токенов будет выпущено</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 counter">
+                        <div class="counter-value" data-count="100000000">0</div>
+                        <p>Токенов остается в компании</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 counter">
+                        <div class="counter-value" data-count="200000000">0</div>
+                        <p>Будет реализовано через лист ожидания</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 counter">
+                        <div class="counter-value" data-count="699000000">0</div>
+                        <p>Токенов передаем для приобретения</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 counter">
+                        <div class="counter-value" data-count="500000">0</div>
+                        <p>Токенов - Bounty активность</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 counter">
+                        <div class="counter-value" data-count="500000">0</div>
+                        <p>Токенов – Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="paper">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-xs-12 col-sm-9 col-sm-offset-2">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <img src="img/paper.png" class="paper img-responsive" alt="paper">
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <p class="h3">Whitepaper</p>
+                        <p class="h4">
+                            Our Whitepaper
+                        </p>
+                        <div class="paper__lang_block">
+                            <p>Language:</p>
+                            <div class="delivery_block2">
+                                <div class="delivery_list2">
+
+                                    <span>   <img src="img/rus.png" alt="language">Russian</span>
+                                </div>
+                                <ul class="cities_list2">
+                                    <li><img src="img/usa.png" alt="usa">English</li>
+                                    <li><img src="img/rus.png" alt="rus">Russian</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="download" href="/downloads/whitepaper.pdf" target="_blank" download="whitepaper">Download
+                            PDF</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="roadmap">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="h3">Roadmap</p>
+                <p class="h4">Our plans for future 1 year.</p>
+            </div>
+        </div>
+        <div class="row timeline">
+            <div class="col-xs-12 col-md-3">
+                <div class="circle">
+                    <div class="circle__small"></div>
+                </div>
+                <div class="float">
+                    <p class="bolder">1. Launch.</p>
+                    <p class="lighter">September 2017</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="circle">
+                    <div class="circle__small"></div>
+                </div>
+                <div class="float">
+                    <p class="bolder">2. PreICO.</p>
+                    <p class="lighter">October 2017</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="circle">
+                    <div class="circle__small"></div>
+                </div>
+                <div class="float">
+                    <p class="bolder">3. PreSale.</p>
+                    <p class="lighter">November 2017</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 last">
+                <div class="circle">
+                    <div class="circle__small"></div>
+                </div>
+                <div class="float">
+                    <p class="bolder">4. ICO. </p>
+                    <p class="lighter">December 2017</p>
+                </div>
+                <img src="img/rad1.png" class="hidden-xs hidden-sm" alt="image">
+            </div>
+        </div>
+        <div class="row hidden-xs hidden-sm">
+            <div class="col-xs-12">
+                <div class="line "></div>
+            </div>
+        </div>
+        <div class="row timeline ">
+            <div class="col-xs-12 col-md-3 first">
+                <div class="circle">
+                    <div class="circle__small"></div>
+                </div>
+                <div class="float">
+                    <p class="bolder">5. Monetization.</p>
+                    <p class="lighter">March 2018</p>
+                </div>
+                <img src="img/rad2.png" class="hidden-xs hidden-sm" alt="image">
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="circle">
+                    <div class="circle__small"></div>
+                </div>
+                <div class="float">
+                    <p class="bolder">6. Platform
+                        Launch</p>
+                    <p class="lighter">March 2018</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="circle">
+                    <div class="circle__small"></div>
+                </div>
+                <div class="float">
+                    <p class="bolder">7. Platform
+                        Testing </p>
+                    <p class="lighter">June 2018</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 latest">
+                <div class="circle">
+                    <div class="circle__small"></div>
+                </div>
+                <div class="float">
+                    <p class="bolder">8. Platform
+                        Start </p>
+                    <p class="lighter">October 2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="h3">Team</p>
+                <p class="h4">Highly experienced people</p>
+            </div>
+        </div>
+        <div class="row teams">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive" src="img/team1.png" alt="team">
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="title"> Кирилл Береснев</p>
+                <p class="opis">Увлеченный Блокчейн инженер из Smartum Pro с 5-ти летним опытом работы, включая
+                    разработку на Ethereum и Hyperledger Fabric, разработку ICO smart контрактов и токенов ERC20,
+                    разработку offchain инструментов (Oracles) и Bigchain DB. Кирилл верит в то, что распределенные
+                    системы и децентрализованная организация способны изменить индустрию недвижимости. </p>
+            </div>
+        </div>
+        <div class="row teams">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive" src="img/team2.png" alt="team">
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <p class="title">Сергей Валуй</p>
+                <p class="opis">Smartum Pro CTO обладающий техническим видением проектов с более чем 10 летним опытым
+                    работы в разработке программного обеспечения. Преодолев все трудности, которые выпали на его долю за
+                    этих 10 лет, Сергей оценивает риски и принимает решения, которые помогают выпустить качественный
+                    продукт в кратчайшие сроки. </p>
+            </div>
+        </div>
+        <div class="hid">
+            <div class="row teams">
+                <div class="col-xs-12 col-md-4">
+                    <img class="img-responsive" src="img/team1.png" alt="team">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <p class="title"> Кирилл Береснев</p>
+                    <p class="opis">Увлеченный Блокчейн инженер из Smartum Pro с 5-ти летним опытом работы, включая
+                        разработку на Ethereum и Hyperledger Fabric, разработку ICO smart контрактов и токенов ERC20,
+                        разработку offchain инструментов (Oracles) и Bigchain DB. Кирилл верит в то, что распределенные
+                        системы и децентрализованная организация способны изменить индустрию недвижимости. </p>
+                </div>
+            </div>
+            <div class="row teams">
+                <div class="col-xs-12 col-md-4">
+                    <img class="img-responsive" src="img/team2.png" alt="team">
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <p class="title">Сергей Валуй</p>
+                    <p class="opis">Smartum Pro CTO обладающий техническим видением проектов с более чем 10 летним
+                        опытым работы в разработке программного обеспечения. Преодолев все трудности, которые выпали на
+                        его долю за этих 10 лет, Сергей оценивает риски и принимает решения, которые помогают выпустить
+                        качественный продукт в кратчайшие сроки. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="more">show all</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--section class="parners">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="h3">Partners</p>
+                <p class="h4">Our trusted friends</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="owl-carousel">
+                    <div>
+                        <a href="#">
+                            <img src="img/partner1.png" class="img-responsive" alt="partners">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/partner2.png" class="img-responsive" alt="partners">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/partner3.png" class="img-responsive" alt="partners">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/partner4.png" class="img-responsive" alt="partners">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/partner5.png" class="img-responsive" alt="partners">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/partner6.png" alt="partners">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/partner1.png" alt="partners">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section-->
+<section class="social">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <form class="form">
+                    <p class="title_form">Subscribe for updates</p>
+                    <p>Sign up to our newsletter....</p>
+                    <input type="email" placeholder="youremail@example.com" name="mail2" required>
+                    <button type="submit"><img src="img/mail.png" alt="facebbock"></button>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <p class="h3">Help us spread the word!</p>
+                <p class="h4">Tell your friend about us.</p>
+                <div class="flexitem">
+                    <a class="soc" href="#"><img src="img/face.png" alt="facebbock">Share it</a><a class="soc" href="#"><img
+                        src="img/twt.png" alt="tweet">Tweet it</a>
+                </div>
+            </div>
+            <div class="col-xs-12  col-md-4">
+                <p class="h5">Join us in Social Media</p>
+                <div class="socialicons">
+                    <a target="_blank" href="https://www.facebook.com/"><img src="img/facebook.png" alt="faceboock"></a>
+                    <a target="_blank" href="https://twitter.com/"><img src="img/twitter.png" alt="twitter"></a>
+                    <a target="_blank" href="https://medium.com/"><img src="img/medium.png" alt="medium"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-7">
+                <p class="h2">Contacts</p>
+                <p class="h3">Have a questions? Don’t hesitate to ask!</p>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p class="title">E-mail</p>
+                        <a href="mailto:info@bitrent.io">info@bitrent.io</a>
+                    </div>
+                    <!--div class="col-xs-12 col-md-6">
+                        <p class="title">Phone</p>
+                        <a href="tel:+380734170149">+38 073 417 0 149</a>
+                    </div-->
+                    <!--div class="col-xs-12">
+                        <p class="title">Adress</p>
+                        <p class="info">HighBlock, 66 Queensway, Admiralty, Hong Kong</p>
+                    </div-->
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 footer">
+                <a href="#main" class="logo"><img src="img/logo_white.svg" alt="logo"></a>
+                <nav class="nav2">
+                    <ul class="menu">
+                        <li><a href="#ideology">Ideology</a></li>
+                        <li><a href="#product">Product</a></li>
+                        <li><a href="#ico">ICO Conditions</a></li>
+                        <li><a href="#paper">Whitepaper</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="subscribe" onclick="showModal()"><img class="hidden-lg" src="img/mail.png"
+                                                                                   alt="facebbock"><span
+                        class="hidden-xs hidden-sm hidden-md">Subscribe
+                    for updates</span></button>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--section class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <a target="_blank" href="https://raxkor.com.ua/">Made by Raxkor</a>
+            </div>
+        </div>
+    </div>
+</section-->
+
+
+<div id="subscribe" class="hidM">
+    <div class="close" onclick="closeModal()">x</div>
+    <form>
+        <p class="title_form">Subscribe for updates</p>
+        <input type="text" placeholder="Your Name" required>
+        <input type="phone" class="maskphone" placeholder="Your phone" required>
+        <input type="email" placeholder="youremail@example.com" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<div id="overlay" class="hidM"></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mask.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    function showModal() {
+        jQuery("#subscribe").removeClass('hidM');
+        jQuery("#overlay").removeClass('hidM');
+    }
+
+    function closeModal() {
+        jQuery("#subscribe").addClass('hidM');
+        jQuery("#overlay").addClass('hidM');
+    }
+
+</script>
+
+</body>
+
+</html>

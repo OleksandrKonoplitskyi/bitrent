@@ -1,0 +1,1742 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: 0.5s
+}
+
+a:focus {
+    text-decoration: none
+}
+
+a:visited {
+    text-decoration: none
+}
+
+a:active {
+    text-decoration: none
+}
+
+a:not(:hover) {
+    transition: 0.5s
+}
+
+.bg {
+    background: #f7f7f7
+}
+
+#subscribe {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: -250px;
+    background: #fff;
+    padding: 25px;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #000;
+    z-index: 1002;
+}
+
+#subscribe .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1001;
+}
+
+.hidM {
+    display: none;
+}
+.hid_3 {
+    display: none;
+}
+
+.open3 {
+    background: #000;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Proxima Nova Bold";
+    width: 100%;
+    max-width: 130px;
+    border: 1px solid #000;
+    display: block;
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+header {
+    padding: 30px 0
+}
+
+header .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f7f7f7;
+    z-index: 1000;
+    padding-bottom: 20px
+}
+
+header .head {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px
+}
+
+header .head .logo {
+    font-family: "Proxima Nova Light";
+    font-size: 18px;
+    color: #000
+}
+header .logo img{
+    min-width: 110px;
+    margin-top: -11px;
+}
+
+header .head .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+header .head .menu li {
+    list-style: none
+}
+
+header .head .menu li a {
+    padding: 15px;
+    font-family: "GothaProLig";
+    font-size: 14px;
+    color: #000
+}
+
+header .head .menu li a:hover {
+    opacity: 0.8
+}
+
+header .head .menu li.active a {
+    font-weight: 900
+}
+
+header .head .subscribe {
+    width: 100%;
+    max-width: 220px;
+    height: 45px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+    font-family: "GothaProLig";
+    font-size: 12px;
+    margin-top: -13px
+}
+
+header .head .subscribe:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s
+}
+
+header .head .subscribe:not(:hover) {
+    transition: 0.5s
+}
+
+header h1 {
+    font-size: 46px;
+    margin-top: 150px;
+    color: #000;
+    font-family: "Proxima Nova Bold";
+    line-height: 1.3
+}
+
+header p {
+    font-size: 16px;
+    margin-top: 25px;
+    color: #000;
+    font-family: "Proxima Nova Regular";
+    line-height: 1.6
+}
+
+header .header_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline
+}
+
+header .header_items .item {
+    width: 30%;
+    height: 100%;
+    min-height: 120px
+}
+
+header .header_items .item:first-child {
+    width: 20%;
+}
+
+header .header_items .item p {
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: "Proxima Nova Bold"
+}
+
+header .header_items .item img {
+    display: block;
+    margin: 0 auto
+}
+
+header .timertext {
+    font-family: 'GothaProBol';
+    font-size: 14px;
+    color: #000;
+    font-weight: 900;
+    margin-top: -55px;
+    margin-left: 5px;
+}
+
+#timer {
+    margin-top: 0
+}
+
+#timer div {
+    display: inline-block;
+    min-width: 105px;
+    height: 105px;
+    background: #fff;
+    font-family: "GothaProReg";
+    font-size: 32px;
+    margin-left: 7px;
+    padding-top: 20px;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.3)
+}
+
+#timer div span {
+    color: #000;
+    display: block;
+    font-family: "Proxima Nova Light";
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center
+}
+
+.form {
+    margin: 40px 0
+}
+
+.form p {
+    font-family: "Proxima Nova Bold";
+    color: #000;
+    font-size: 18px
+}
+
+.form input {
+    background: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    height: 45px;
+    line-height: 45px;
+    float: left
+}
+
+.form input::-webkit-input-placeholder {
+    color: #000;
+    font-family: "Proxima Nova Light";
+    font-size: 15px
+}
+
+.form input::-moz-placeholder {
+    color: #000;
+    font-family: "Proxima Nova Light";
+    font-size: 15px
+}
+
+.form input:-ms-input-placeholder {
+    color: #000;
+    font-family: "Proxima Nova Light";
+    font-size: 15px
+}
+
+.form input:-moz-placeholder {
+    color: #000;
+    font-family: "Proxima Nova Light";
+    font-size: 15px
+}
+
+.form button {
+    background: #000;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Proxima Nova Bold";
+    width: 100%;
+    max-width: 130px;
+    border: 1px solid #000;
+    margin-left: 12px;
+    float: left
+}
+
+.form button:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s
+}
+
+.form button:not(:hover) {
+    transition: 0.5s
+}
+
+#ideology {
+    padding: 20px 0 60px
+}
+
+#ideology p.h1 {
+    color: #202020;
+    font-family: "GothaProReg";
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 30px auto 40px;
+}
+
+#ideology p.h2 {
+    font-size: 30px;
+    color: #202020;
+    font-family: "Proxima Nova Regular";
+    font-weight: 700;
+    margin: 0
+}
+
+#ideology p.h2:first-child {
+    margin-top: 70px
+}
+
+#ideology .set {
+    padding: 30px 0 70px
+}
+
+#ideology .set p.h3 {
+    font-size: 24px;
+    color: #202020;
+    font-family: "Proxima Nova Regular";
+    font-weight: 700
+}
+
+#ideology .set p.item {
+    color: #2b2b2f;
+    font-size: 18px;
+    font-family: "Proxima Nova Regular";
+    position: relative;
+    padding-left: 35px;
+    margin: 30px 0 20px;
+    width: 70%;
+}
+
+#ideology .set p.item:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 2px solid #353537;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 0
+}
+
+.ideology_h4:first-child {
+    font-family: "Proxima Nova Regular";
+    padding: 50px 0 0;
+    font-size: 26px;
+    color: #202020;
+    margin: 0
+}
+
+.ideology_h4:last-child {
+    font-family: "Proxima Nova Regular";
+    padding: 0 0 50px;
+    font-size: 26px;
+    color: #202020
+}
+
+#product {
+    padding: 50px 0
+}
+
+#product .product__title {
+    color: #202020;
+    font-family: "GothaProReg";
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 30px auto 40px
+}
+
+#product p {
+    font-family: "Proxima Nova Regular";
+    font-size: 18px;
+    color: #2b2b2f
+}
+
+#product .product__opis {
+    font-weight: 700;
+    font-family: "Proxima Nova Regular";
+    font-size: 30px;
+    color: #000;
+    margin: 0
+}
+
+#product p.h3 {
+    margin: 90px auto 30px;
+    font-size: 22px;
+    color: #000;
+    font-family: "Proxima Nova Regular"
+}
+
+#product .product__item {
+    margin: 20px auto
+}
+
+#product .product__item p {
+    color: #2b2b2f;
+    font-size: 18px;
+    font-family: "Proxima Nova Regular";
+    position: relative;
+    padding-left: 35px
+}
+
+#product .product__item p:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #2b2b2f;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: 0
+}
+
+#product .product__text p {
+    color: #2b2b2f;
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+    display: block;
+    margin: 100px auto 50px;
+    font-family: "GothaProLig";
+    line-height: 1.9
+}
+
+#product .product__text__last p {
+    font-size: 18px;
+    color: #000;
+    font-family: "Proxima Nova Regular";
+    line-height: 1.5;
+    position: relative;
+    border-left: 5px solid #e1e1e1;
+    padding: 0 20px
+}
+
+#product .product__video {
+    padding: 50px 0
+}
+
+#product .product__video iframe {
+    width: 100%;
+    height: 345px;
+    max-width: 730px;
+    display: block;
+    margin: 30px auto
+}
+
+#ico {
+    padding: 50px 0 50px
+}
+
+#ico p.ico__title {
+    font-size: 18px;
+    font-family: "GothaProReg";
+    color: #000;
+    text-align: center
+}
+
+#ico p.ico__title2 {
+    font-size: 36px;
+    font-family: "Proxima Nova Bold";
+    color: #000;
+    text-align: center
+}
+
+#ico .counter {
+    margin-top: 50px
+}
+
+#ico .counter .counter-value {
+    font-family: "Proxima Nova Regular";
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: #000
+}
+
+#ico .counter p {
+    font-family: "Proxima Nova Regular";
+    font-size: 20px;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: #000
+}
+
+.delivery_block {
+    font-size: 11px
+}
+
+.delivery_list {
+    width: 90px;
+    cursor: pointer;
+    z-index: 11
+}
+
+.delivery_list img {
+    float: left;
+    margin-right: 5px
+}
+
+.delivery_list span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-family: "GothaProReg";
+    color: #000;
+    padding: 1px 10px;
+    position: relative;
+}
+
+.delivery_list span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 7px;
+    background: url("../img/down.png") no-repeat;
+    top: 7px;
+    right: -15px;
+}
+
+.delivery_block ul.cities_list {
+    margin-top: 22px;
+    padding: 0;
+    border: 1px solid #eee;
+    display: none;
+    position: absolute;
+    background: #f7f7f7
+}
+
+ul.cities_list li {
+    padding: 3px 10px;
+    list-style-type: none;
+    margin: 10px auto;
+    font-size: 14px;
+    font-family: "GothaProReg"
+}
+
+ul.cities_list li img {
+    margin-right: 5px
+}
+
+ul.cities_list li:hover {
+    cursor: pointer;
+    background: #fff
+}
+
+.delivery_block .delivery_text {
+    padding: 3px 5px;
+    margin: 5px 0 0 3px
+}
+
+#paper {
+    padding: 80px 0
+}
+
+#paper .h3 {
+    font-size: 18px;
+    font-family: "GothaProReg";
+    color: #000;
+    text-align: left;
+    text-transform: uppercase
+}
+
+#paper .h4 {
+    font-size: 36px;
+    font-family: "Proxima Nova Bold";
+    color: #000;
+    text-align: left
+}
+
+#paper .delivery_block2 {
+    font-size: 11px
+}
+
+#paper .delivery_block2 .delivery_list2 {
+    width: 130px;
+    cursor: pointer;
+    z-index: 11
+}
+
+#paper .delivery_block2 .delivery_list2 img {
+    float: left;
+    margin-right: 5px;
+    margin-top: 3px
+}
+
+#paper .delivery_block2 .delivery_list2 span {
+    display: block;
+    float: left;
+    font-size: 22px;
+    color: #000;
+    font-family: "Proxima Nova Regular";
+    padding: 1px 10px;
+    position: relative;
+}
+
+#paper .delivery_block2 .delivery_list2 span:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 7px;
+    background: url("../img/down.png") no-repeat;
+    top: 10px;
+    right: -15px;
+}
+
+#paper ul.cities_list2 {
+    margin-top: 30px;
+    padding: 0;
+    border: 1px solid #eee;
+    display: none;
+    position: absolute;
+    background: #f7f7f7
+}
+
+#paper ul.cities_list2 li {
+    padding: 3px 10px;
+    list-style-type: none;
+    margin: 10px auto;
+    font-size: 18px;
+    color: #000;
+    font-family: "Proxima Nova Regular"
+}
+
+#paper ul.cities_list2 li img {
+    margin-right: 5px
+}
+
+#paper ul.cities_list2 li:hover {
+    cursor: pointer;
+    background: #fff
+}
+
+#paper .delivery_block .delivery_text {
+    padding: 3px 5px;
+    margin: 5px 0 0 3px
+}
+
+#paper .paper__lang_block {
+    display: flex;
+    margin-top: 50px
+}
+
+#paper .paper__lang_block p {
+    font-size: 22px;
+    color: #000;
+    font-family: "Proxima Nova Regular"
+}
+
+#paper .download {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: "Proxima Nova Bold";
+    display: block;
+    margin-top: 30px
+}
+
+#paper .download:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s
+}
+
+#paper .download:not(:hover) {
+    transition: 0.5s
+}
+
+#roadmap {
+    padding: 50px 0
+}
+
+#roadmap .h3 {
+    font-size: 18px;
+    font-family: "GothaProReg";
+    color: #000;
+    text-align: left;
+    text-transform: uppercase
+}
+
+#roadmap .h4 {
+    font-size: 36px;
+    font-family: "Proxima Nova Bold";
+    color: #000;
+    text-align: left
+}
+
+#roadmap .timeline {
+    position: relative
+}
+
+#roadmap .timeline .circle {
+    width: 45px;
+    line-height: 45px;
+    height: 45px;
+    border: 8px solid #dadbdd;
+    border-radius: 50%;
+    display: block;
+    margin: 50px 0 20px;
+    position: relative;
+    z-index: 900
+}
+
+#roadmap .timeline .circle:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: #f1f2f4;
+    height: 10px;
+    width: 250px;
+    top: 10px;
+    left: 37px;
+}
+
+#roadmap .timeline .circle__small {
+    width: 10px;
+    height: 10px;
+    background: #d1d2d4;
+    display: block;
+    margin-left: 9px;
+    margin-top: 9px;
+    border-radius: 50%
+}
+
+#roadmap .timeline .last {
+    position: relative
+}
+
+#roadmap .timeline .last .circle:after {
+    content: '';
+    width: 150px
+}
+
+#roadmap .timeline .last img {
+    position: absolute;
+    top: 67px;
+    right: 0
+}
+
+#roadmap .timeline .latest .circle:after {
+    content: '';
+    width: 300px;
+    display: none;
+}
+
+#roadmap .line {
+    height: 10px;
+    display: block;
+    width: 89%;
+    background: #f1f2f4;
+    margin: 43px auto 10px
+}
+
+#roadmap .first {
+    position: relative
+}
+
+#roadmap .first img {
+    position: absolute;
+    top: -20px;
+    left: 0
+}
+
+#roadmap .bolder {
+    font-size: 24px;
+    font-family: "Proxima Nova Regular";
+    font-weight: 700;
+    color: #000
+}
+
+#roadmap .lighter {
+    font-size: 20px;
+    font-family: "Proxima Nova Light";
+    color: #9fa3a7
+}
+
+#team {
+    padding: 50px 0
+}
+
+#team .h3 {
+    font-size: 18px;
+    font-family: "GothaProReg";
+    color: #000;
+    text-align: left;
+    text-transform: uppercase
+}
+
+#team .h4 {
+    font-size: 36px;
+    font-family: "Proxima Nova Bold";
+    color: #000;
+    text-align: left
+}
+
+#team .teams {
+    margin: 50px 0
+}
+
+#team .teams .title {
+    font-family: "Proxima Nova Bold";
+    font-size: 22px;
+    color: #000
+}
+
+#team .teams .opis {
+    color: #9fa3a7;
+    font-size: 16px;
+    font-family: "Proxima Nova Regular"
+}
+
+#team .more {
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+    font-family: "GothaProLig";
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    margin: 30px auto 50px
+}
+
+#team .more:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s
+}
+
+#team .more:not(:hover) {
+    transition: 0.5s
+}
+
+#team .hid {
+    display: none
+}
+.parners {
+    padding: 50px 0 ;
+}
+.parners .h3 {
+    font-size: 18px;
+    font-family: "GothaProReg";
+    color: #000;
+    text-align: left;
+    text-transform: uppercase
+}
+
+.parners .h4 {
+    font-size: 36px;
+    font-family: "Proxima Nova Bold";
+    color: #000;
+    text-align: left;
+    margin-bottom: 70px;
+}
+.social {
+    background: #f0f1f4;
+    padding: 50px 0
+}
+
+.social .form {
+    margin: 0
+}
+
+.social button {
+    width: 100%;
+    max-width: 55px;
+    float: left;
+    margin-top: 50px
+}
+
+.social input {
+    float: left;
+    margin-top: 50px
+}
+
+.social p {
+    color: #2d2c2c;
+    font-family: "Proxima Nova Light";
+    font-size: 16px
+}
+
+.social p.title_form {
+    color: #000;
+    font-size: 32px;
+    font-family: "Proxima Nova Bold";
+    width: 80%;
+    line-height: 1.1
+}
+
+.social p.h3 {
+    color: #000;
+    font-size: 32px;
+    font-family: "Proxima Nova Bold";
+    width: 80%;
+    margin: 0
+}
+
+.social p.h4 {
+    color: #2d2c2c;
+    font-family: "Proxima Nova Light";
+    font-size: 16px
+}
+
+.social form button:hover {
+    background: #ccc;
+}
+
+.social a.soc {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    max-width: 130px;
+    height: 45px;
+    line-height: 45px;
+    text-align: right;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+    font-family: "Proxima Nova Bold";
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-left: 5px;
+    padding-right: 10px;
+    margin-top: 55px
+}
+
+.social a.soc img {
+    max-width: 30px;
+    margin-right: 15px;
+}
+
+.social a.soc:hover {
+    background: #ccc;
+    color: #000;
+    transition: 0.5s
+}
+
+.social a.soc:not(:hover) {
+    transition: 0.5s
+}
+
+.social .socialicons a {
+    display: inline-block;
+    float: left;
+    margin-top: 125px;
+    margin-left: 15px
+}
+
+.social .socialicons a img {
+    max-width: 50px
+}
+
+.social .h5 {
+    color: #000;
+    font-size: 32px;
+    font-family: "Proxima Nova Bold";
+    margin: 0
+}
+
+footer {
+    padding: 50px 0 20px
+}
+
+footer .h2 {
+    font-size: 18px;
+    font-family: "GothaProReg";
+    color: #000;
+    text-align: left;
+    text-transform: uppercase
+}
+
+footer .h3 {
+    font-size: 36px;
+    font-family: "Proxima Nova Bold";
+    color: #000;
+    text-align: left
+}
+
+footer .title {
+    font-family: "Proxima Nova Light";
+    color: #3a3a3d;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 50px
+}
+
+footer a {
+    color: #3a3a3d;
+    font-size: 20px;
+    font-family: "Proxima Nova Light"
+}
+
+footer .info {
+    color: #3a3a3d;
+    font-size: 20px;
+    font-family: "Proxima Nova Light"
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px
+}
+
+footer .footer .logo {
+    font-family: "Proxima Nova Light";
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    margin-top: -15px;
+}
+footer .footer .logo img{
+    min-width: 130px;
+}
+
+footer .footer .menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+footer .footer .menu li {
+    list-style: none
+}
+
+footer .footer .menu li a {
+    padding: 15px;
+    font-family: "GothaProLig";
+    font-size: 14px;
+    color: #000
+}
+
+footer .footer .menu li a:hover {
+    opacity: 0.8
+}
+
+footer .footer .subscribe {
+    width: 100%;
+    max-width: 220px;
+    height: 45px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    border: 1px solid #000;
+    font-family: "GothaProLig";
+    font-size: 12px;
+    margin-top: -5px
+}
+
+footer .footer .subscribe:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s
+}
+
+footer .footer .subscribe:not(:hover) {
+    transition: 0.5s
+}
+
+#subscribe .modal {
+    border-radius: 0;
+    border: 2px solid #000
+}
+
+#subscribe form .title_form {
+    color: #000;
+    font-size: 32px;
+    font-family: "Proxima Nova Bold";
+    line-height: 1.1;
+    text-align: center
+}
+
+#subscribe form input {
+    background: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    height: 45px;
+    display: block;
+    line-height: 45px;
+    margin: 20px auto
+}
+
+#subscribe form input::-webkit-input-placeholder {
+    color: #000;
+    font-family: "Proxima Nova Light";
+    font-size: 15px
+}
+
+#subscribe form input::-moz-placeholder {
+    color: #000;
+    font-family: "Proxima Nova Light";
+    font-size: 15px
+}
+
+#subscribe form input:-ms-input-placeholder {
+    color: #000;
+    font-family: "Proxima Nova Light";
+    font-size: 15px
+}
+
+#subscribe form input:-moz-placeholder {
+    color: #000;
+    font-family: "Proxima Nova Light";
+    font-size: 15px
+}
+
+#subscribe form button {
+    background: #000;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Proxima Nova Bold";
+    width: 100%;
+    max-width: 130px;
+    border: 1px solid #000;
+    display: block;
+    margin: 20px auto
+}
+
+#subscribe form button:hover {
+    background: #fff;
+    color: #000;
+    transition: 0.5s
+}
+
+#subscribe form button:not(:hover) {
+    transition: 0.5s
+}
+
+#subscribe .modal-header {
+    border-bottom: none
+}
+
+.copyright {
+    background: #000;
+    padding: 10px 0;
+}
+
+.copyright a {
+    color: #9fa3a7;
+    font-size: 14px;
+}
+
+
+.open1 {
+    background: #000;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Proxima Nova Bold";
+    width: 100%;
+    max-width: 130px;
+    border: 1px solid #000;
+    display: block;
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+
+.open2 {
+    background: #000;
+    color: #fff;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Proxima Nova Bold";
+    width: 100%;
+    max-width: 130px;
+    border: 1px solid #000;
+    display: block;
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1400px) {
+    body {
+
+    }
+
+    #roadmap .timeline .latest .circle:after {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    header .head {
+        justify-content: space-between;
+    }
+
+    header .head .subscribe {
+        display: none;
+    }
+
+    header nav {
+        width: 80%;
+    }
+    header .header_items .item:first-child {
+        width: 30%;
+    }
+
+    header .logo {
+        width: 10%;
+    }
+
+    .delivery_block {
+        width: 10%;
+    }
+
+    header .head .menu li a {
+        padding: 0;
+    }
+
+    header nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    header h1 {
+        margin-top: 150px;
+    }
+
+    header .timertext {
+        margin: 20px auto 10px;
+        text-align: center;
+    }
+
+    header .header_items .item p {
+        width: 70%;
+    }
+
+    #timer {
+        text-align: center;
+    }
+
+    #timer div {
+        display: inline-block;
+        min-width: 85px;
+        height: 85px;
+        padding-top: 10px;
+    }
+
+    #roadmap .timeline .circle:after {
+        width: 200px;
+    }
+
+    #roadmap .timeline .last .circle:after {
+        width: 100px;
+    }
+
+    #roadmap .timeline .latest .circle:after {
+        width: 130px;
+    }
+
+    .form input {
+        max-width: 180px;
+    }
+
+    .social .socialicons a {
+        margin-top: 88px;
+    }
+
+    footer .footer .subscribe {
+        height: 35px;
+        line-height: 30px;
+        max-width: 60px;
+    }
+
+    footer .footer .subscribe:hover {
+        background: #ccc;
+    }
+
+}
+
+@media (max-width: 992px) {
+    header nav {
+        width: 75%;
+    }
+
+    .delivery_list span:after {
+        right: -4px;
+    }
+
+    #ideology .set p.item {
+        width: 100%;
+    }
+
+    #paper img.paper {
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    #paper .download {
+        margin: 30px auto;
+    }
+
+    #paper .paper__lang_block {
+        justify-content: center;
+    }
+
+    #paper .h3 {
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    #paper .h4 {
+        text-align: center;
+    }
+
+    #roadmap .timeline .circle {
+        float: left;
+    }
+
+    .float {
+        float: left;
+    }
+
+    #roadmap .timeline .circle:after {
+        width: 10px;
+        height: 70px;
+        top: 37px;
+        left: 9px;
+    }
+
+    #roadmap .timeline .last .circle:after {
+        width: 10px;
+    }
+
+    #roadmap .timeline .latest .circle:after {
+        display: none;
+    }
+
+    #roadmap .bolder {
+        margin: 35px 0 0 30px;
+    }
+
+    #roadmap .lighter {
+        margin: 15px 0 0 30px;
+    }
+
+    .social p.h3 {
+    }
+
+    .social p.h5 {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .socialicons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .social .socialicons a {
+        margin-top: 28px;
+    }
+
+    .footer .logo {
+        width: 15%;
+    }
+
+    .footer nav {
+        width: 70%;
+    }
+
+    .footer nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    footer .footer .menu li a {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        margin-top: -10px;
+    }
+
+    .hamburger .line {
+        width: 40px;
+        height: 5px;
+        background-color: #000;
+        display: block;
+        margin: 8px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    /* SIX */
+    #hamburger-6.is-active {
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition-delay: 0.6s;
+        -o-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #hamburger-6.is-active .line:nth-child(2) {
+        width: 0px;
+    }
+
+    #hamburger-6.is-active .line:nth-child(1),
+    #hamburger-6.is-active .line:nth-child(3) {
+        -webkit-transition-delay: 0.3s;
+        -o-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+    }
+
+    #hamburger-6.is-active .line:nth-child(1) {
+        -webkit-transform: translateY(13px);
+        -ms-transform: translateY(13px);
+        -o-transform: translateY(13px);
+        transform: translateY(13px);
+    }
+
+    #hamburger-6.is-active .line:nth-child(3) {
+        -webkit-transform: translateY(-13px) rotate(90deg);
+        -ms-transform: translateY(-13px) rotate(90deg);
+        -o-transform: translateY(-13px) rotate(90deg);
+        transform: translateY(-13px) rotate(90deg);
+    }
+
+    header .head .nav {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        z-index: 999;
+        background: #f7f7f7;
+        width: 100%;
+    }
+
+    header .head .menu {
+        display: block;
+    }
+
+    header .head .menu li a {
+        display: block;
+        margin: 15px auto;
+        text-align: center;
+    }
+
+    header .head {
+        margin-top: 30px;
+    }
+
+    #product .product__video iframe {
+        height: 215px;
+    }
+
+    header h1 {
+        margin-top: 70px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header .header_items .item {
+        width: 50%;
+    }
+
+    header .header_items .item:first-child {
+        width: 60%;
+    }
+
+    header .header_items {
+        justify-content: space-around;
+    }
+
+    header .header_items .item p {
+        width: 100%;
+    }
+
+    header .head .subscribe {
+        display: block;
+        max-width: 60px;
+    }
+
+    header .head .subscribe:hover {
+        background: #ccc;
+    }
+
+    #timer div {
+        display: inline-block;
+        min-width: 60px;
+        height: 70px;
+        padding-top: 5px;
+        font-size: 24px;
+    }
+
+    .form input {
+        float: none;
+        display: block;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .form button {
+        float: none;
+        display: block;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    #ideology {
+        padding: 50px 0 20px;
+    }
+
+    #ico {
+        padding: 80px 0 50px;
+    }
+
+    #ideology p.h2:first-child {
+        margin-top: 30px;
+    }
+
+    #ideology p.h2 {
+        font-size: 26px;
+    }
+
+    #ideology .set {
+        padding: 30px 0 20px;
+    }
+
+    .ideology_h4:first-child {
+        font-size: 22px;
+    }
+
+    .ideology_h4:last-child {
+        font-size: 22px;
+    }
+
+    #product .product__opis {
+        font-size: 24px;
+    }
+
+    #product .product__title {
+        margin: 30px auto 20px;
+    }
+
+    #product p.h3 {
+        margin: 40px auto 30px;
+    }
+
+    #product .product__text p {
+        margin: 30px auto 20px;
+    }
+
+    #ico p.ico__title2 {
+        font-size: 26px;
+    }
+
+    #ico .counter {
+        margin-top: 20px;
+    }
+
+    #paper {
+        padding: 90px 0 10px;
+    }
+
+    #roadmap .h4 {
+        font-size: 24px;
+    }
+
+    #team .h4 {
+        font-size: 26px;
+    }
+
+    #team {
+        padding: 50px 0 0;
+    }
+
+    .social p.title_form {
+        font-size: 26px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .social p {
+        text-align: center;
+    }
+
+    .flexitem {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social p.h3 {
+        font-size: 24px;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .parners .h4 {
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+
+    .social a.soc {
+        margin-top: 15px;
+    }
+
+    .social p.h5 {
+        font-size: 24px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer .h3 {
+        font-size: 26px;
+    }
+
+    footer {
+        padding: 50px 0 20px;
+    }
+
+    footer .title {
+        margin-top: 20px;
+    }
+
+    .footer .nav2 {
+        display: none;
+    }
+
+    .footer .subscribe {
+        display: block;
+        width: 100%;
+    }
+
+    .hid_1 {
+        display: none;
+    }
+
+    .hid_2 {
+        display: none;
+    }
+    .hid_3{
+        display: block;
+    }
+
+
+    header .logo {
+        width: 5%;
+    }
+
+    .delivery_block {
+        width: 15%;
+
+    }
+}
+
+    @media (max-width: 480px) {
+        header .head .subscribe {
+            display: none;
+        }
+
+        #subscribe {
+            left: 0;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        header .logo {
+            width: 20%;
+        }
+
+        .delivery_block {
+            width: 30%;
+        }
+    }
+
